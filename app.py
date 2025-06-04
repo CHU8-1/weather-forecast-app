@@ -6,7 +6,7 @@ from datetime import datetime
 
 # 讀取 API key（來自 secrets）
 api_key = st.secrets["weather"]["api_key"]
-st.write("API Key loaded:", api_key)
+
 # 設定頁面標題
 st.set_page_config(page_title="天氣預報趨勢圖", layout="wide")
 
