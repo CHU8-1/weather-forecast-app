@@ -4,3 +4,5 @@ pandas
 plotly
 openpyxl
 matplotlib
+pytz
+timezonefinder
