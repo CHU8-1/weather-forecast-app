@@ -38,7 +38,7 @@ def get_weather_data(city, api_key):
     df = pd.DataFrame(data['list'])
     df['temp'] = df['main'].apply(lambda x: x['temp'])
     df['humidity'] = df['main'].apply(lambda x: x['humidity'])
-    df['datetime'] = pd.to_datetime(df['dt'], unit='s').dt.tz_localize('None')
+    df['datetime'] = pd.to_datetime(df['dt'], unit='s').dt.tz_localize('UTC')
 
     timezone = get_timezone(city)
     if timezone:
