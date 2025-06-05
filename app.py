@@ -55,7 +55,7 @@ def plot_weather(df, city):
     ax2 = ax1.twinx()
     ax2.plot(df['datetime'], df['humidity'], label='Humidity (%)', color='blue')
     ax2.set_ylabel('Humidity (%)', color='blue')
-    plt.title(f"{city} 一週天氣趨勢")
+    plt.title(f"{city}'s weekly weather trends")
     st.pyplot(fig)
 
 # 顯示
